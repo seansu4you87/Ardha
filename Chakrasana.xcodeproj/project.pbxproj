@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF61F72E157EB29600CCA56D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61F72D157EB29600CCA56D /* UIKit.framework */; };
+		DF61F730157EB29600CCA56D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61F72F157EB29600CCA56D /* Foundation.framework */; };
+		DF61F732157EB29600CCA56D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61F731157EB29600CCA56D /* CoreGraphics.framework */; };
+		DF61F738157EB29600CCA56D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF61F736157EB29600CCA56D /* InfoPlist.strings */; };
+		DF61F73A157EB29600CCA56D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61F739157EB29600CCA56D /* main.m */; };
+		DF61F73E157EB29600CCA56D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61F73D157EB29600CCA56D /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF61F729157EB29600CCA56D /* Chakrasana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chakrasana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF61F72D157EB29600CCA56D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF61F72F157EB29600CCA56D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF61F731157EB29600CCA56D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF61F735157EB29600CCA56D /* Chakrasana-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chakrasana-Info.plist"; sourceTree = "<group>"; };
+		DF61F737157EB29600CCA56D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF61F739157EB29600CCA56D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF61F73B157EB29600CCA56D /* Chakrasana-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chakrasana-Prefix.pch"; sourceTree = "<group>"; };
+		DF61F73C157EB29600CCA56D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF61F73D157EB29600CCA56D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF61F726157EB29600CCA56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF61F72E157EB29600CCA56D /* UIKit.framework in Frameworks */,
+				DF61F730157EB29600CCA56D /* Foundation.framework in Frameworks */,
+				DF61F732157EB29600CCA56D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF61F71E157EB29600CCA56D = {
+			isa = PBXGroup;
+			children = (
+				DF61F733157EB29600CCA56D /* Chakrasana */,
+				DF61F72C157EB29600CCA56D /* Frameworks */,
+				DF61F72A157EB29600CCA56D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF61F72A157EB29600CCA56D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF61F729157EB29600CCA56D /* Chakrasana.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF61F72C157EB29600CCA56D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF61F72D157EB29600CCA56D /* UIKit.framework */,
+				DF61F72F157EB29600CCA56D /* Foundation.framework */,
+				DF61F731157EB29600CCA56D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF61F733157EB29600CCA56D /* Chakrasana */ = {
+			isa = PBXGroup;
+			children = (
+				DF61F73C157EB29600CCA56D /* AppDelegate.h */,
+				DF61F73D157EB29600CCA56D /* AppDelegate.m */,
+				DF61F734157EB29600CCA56D /* Supporting Files */,
+			);
+			path = Chakrasana;
+			sourceTree = "<group>";
+		};
+		DF61F734157EB29600CCA56D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF61F735157EB29600CCA56D /* Chakrasana-Info.plist */,
+				DF61F736157EB29600CCA56D /* InfoPlist.strings */,
+				DF61F739157EB29600CCA56D /* main.m */,
+				DF61F73B157EB29600CCA56D /* Chakrasana-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF61F728157EB29600CCA56D /* Chakrasana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF61F741157EB29600CCA56D /* Build configuration list for PBXNativeTarget "Chakrasana" */;
+			buildPhases = (
+				DF61F725157EB29600CCA56D /* Sources */,
+				DF61F726157EB29600CCA56D /* Frameworks */,
+				DF61F727157EB29600CCA56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chakrasana;
+			productName = Chakrasana;
+			productReference = DF61F729157EB29600CCA56D /* Chakrasana.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF61F720157EB29600CCA56D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = DF61F723157EB29600CCA56D /* Build configuration list for PBXProject "Chakrasana" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF61F71E157EB29600CCA56D;
+			productRefGroup = DF61F72A157EB29600CCA56D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF61F728157EB29600CCA56D /* Chakrasana */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF61F727157EB29600CCA56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF61F738157EB29600CCA56D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF61F725157EB29600CCA56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF61F73A157EB29600CCA56D /* main.m in Sources */,
+				DF61F73E157EB29600CCA56D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF61F736157EB29600CCA56D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF61F737157EB29600CCA56D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF61F73F157EB29600CCA56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF61F740157EB29600CCA56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF61F742157EB29600CCA56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chakrasana/Chakrasana-Prefix.pch";
+				INFOPLIST_FILE = "Chakrasana/Chakrasana-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF61F743157EB29600CCA56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chakrasana/Chakrasana-Prefix.pch";
+				INFOPLIST_FILE = "Chakrasana/Chakrasana-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF61F723157EB29600CCA56D /* Build configuration list for PBXProject "Chakrasana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF61F73F157EB29600CCA56D /* Debug */,
+				DF61F740157EB29600CCA56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF61F741157EB29600CCA56D /* Build configuration list for PBXNativeTarget "Chakrasana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF61F742157EB29600CCA56D /* Debug */,
+				DF61F743157EB29600CCA56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF61F720157EB29600CCA56D /* Project object */;
+}
