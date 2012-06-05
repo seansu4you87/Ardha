@@ -3,7 +3,7 @@
 //  Chakrasana
 //
 //  Created by Bogo Giertler on 6/5/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 schnap.ps. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -18,6 +18,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

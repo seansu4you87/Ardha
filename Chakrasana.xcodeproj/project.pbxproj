@@ -13,6 +13,8 @@
 		DF61F738157EB29600CCA56D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF61F736157EB29600CCA56D /* InfoPlist.strings */; };
 		DF61F73A157EB29600CCA56D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61F739157EB29600CCA56D /* main.m */; };
 		DF61F73E157EB29600CCA56D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61F73D157EB29600CCA56D /* AppDelegate.m */; };
+		DFB47BF9157EB86500351C58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61F72F157EB29600CCA56D /* Foundation.framework */; };
+		DFB47C0C157EBAAB00351C58 /* libArdha.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB47BF8157EB86500351C58 /* libArdha.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		DF61F73B157EB29600CCA56D /* Chakrasana-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chakrasana-Prefix.pch"; sourceTree = "<group>"; };
 		DF61F73C157EB29600CCA56D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF61F73D157EB29600CCA56D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFB47BE7157EB7A900351C58 /* Ardha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ardha.h; sourceTree = "<group>"; };
+		DFB47BE8157EB7A900351C58 /* Ardha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ardha.m; sourceTree = "<group>"; };
+		DFB47BEA157EB7EE00351C58 /* Ardha-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ardha-Prefix.pch"; sourceTree = "<group>"; };
+		DFB47BF8157EB86500351C58 /* libArdha.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libArdha.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,9 +39,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB47C0C157EBAAB00351C58 /* libArdha.a in Frameworks */,
 				DF61F72E157EB29600CCA56D /* UIKit.framework in Frameworks */,
 				DF61F730157EB29600CCA56D /* Foundation.framework in Frameworks */,
 				DF61F732157EB29600CCA56D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB47BF5157EB86500351C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB47BF9157EB86500351C58 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				DF61F733157EB29600CCA56D /* Chakrasana */,
+				DFB47BE4157EB76E00351C58 /* Ardha */,
 				DF61F72C157EB29600CCA56D /* Frameworks */,
 				DF61F72A157EB29600CCA56D /* Products */,
 			);
@@ -55,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				DF61F729157EB29600CCA56D /* Chakrasana.app */,
+				DFB47BF8157EB86500351C58 /* libArdha.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,15 +99,43 @@
 		DF61F734157EB29600CCA56D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DF61F73B157EB29600CCA56D /* Chakrasana-Prefix.pch */,
 				DF61F735157EB29600CCA56D /* Chakrasana-Info.plist */,
 				DF61F736157EB29600CCA56D /* InfoPlist.strings */,
 				DF61F739157EB29600CCA56D /* main.m */,
-				DF61F73B157EB29600CCA56D /* Chakrasana-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFB47BE4157EB76E00351C58 /* Ardha */ = {
+			isa = PBXGroup;
+			children = (
+				DFB47BE7157EB7A900351C58 /* Ardha.h */,
+				DFB47BE8157EB7A900351C58 /* Ardha.m */,
+				DFB47BE6157EB77400351C58 /* Supporting Files */,
+			);
+			path = Ardha;
+			sourceTree = "<group>";
+		};
+		DFB47BE6157EB77400351C58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFB47BEA157EB7EE00351C58 /* Ardha-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFB47BF6157EB86500351C58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		DF61F728157EB29600CCA56D /* Chakrasana */ = {
@@ -110,6 +155,23 @@
 			productReference = DF61F729157EB29600CCA56D /* Chakrasana.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DFB47BF7157EB86500351C58 /* Ardha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB47C00157EB86500351C58 /* Build configuration list for PBXNativeTarget "Ardha" */;
+			buildPhases = (
+				DFB47BF4157EB86500351C58 /* Sources */,
+				DFB47BF5157EB86500351C58 /* Frameworks */,
+				DFB47BF6157EB86500351C58 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ardha;
+			productName = Ardha;
+			productReference = DFB47BF8157EB86500351C58 /* libArdha.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +179,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = schnap.ps;
 			};
 			buildConfigurationList = DF61F723157EB29600CCA56D /* Build configuration list for PBXProject "Chakrasana" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -131,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				DF61F728157EB29600CCA56D /* Chakrasana */,
+				DFB47BF7157EB86500351C58 /* Ardha */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +217,13 @@
 			files = (
 				DF61F73A157EB29600CCA56D /* main.m in Sources */,
 				DF61F73E157EB29600CCA56D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB47BF4157EB86500351C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +310,30 @@
 			};
 			name = Release;
 		};
+		DFB47C01157EB86500351C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Ardha.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ardha/Ardha-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DFB47C02157EB86500351C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Ardha.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ardha/Ardha-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -256,6 +351,15 @@
 			buildConfigurations = (
 				DF61F742157EB29600CCA56D /* Debug */,
 				DF61F743157EB29600CCA56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB47C00157EB86500351C58 /* Build configuration list for PBXNativeTarget "Ardha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB47C01157EB86500351C58 /* Debug */,
+				DFB47C02157EB86500351C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
