@@ -47,11 +47,11 @@
 		DFB47C39157ED12400351C58 /* AUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C37157ED12400351C58 /* AUser.m */; };
 		DFB47C40157ED62800351C58 /* AWorkspace.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C3E157ED62800351C58 /* AWorkspace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFB47C41157ED62800351C58 /* AWorkspace.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C3F157ED62800351C58 /* AWorkspace.m */; };
-		DFB47C44157EEBD000351C58 /* ATask.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C42157EEBD000351C58 /* ATask.h */; };
+		DFB47C44157EEBD000351C58 /* ATask.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C42157EEBD000351C58 /* ATask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFB47C45157EEBD000351C58 /* ATask.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C43157EEBD000351C58 /* ATask.m */; };
-		DFB47C48157EEBD900351C58 /* AProject.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C46157EEBD900351C58 /* AProject.h */; };
+		DFB47C48157EEBD900351C58 /* AProject.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C46157EEBD900351C58 /* AProject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFB47C49157EEBD900351C58 /* AProject.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C47157EEBD900351C58 /* AProject.m */; };
-		DFB47C4C157EEBE200351C58 /* AStory.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C4A157EEBE100351C58 /* AStory.h */; };
+		DFB47C4C157EEBE200351C58 /* AStory.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C4A157EEBE100351C58 /* AStory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFB47C4D157EEBE200351C58 /* AStory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C4B157EEBE200351C58 /* AStory.m */; };
 		DFB47C50157EEFE700351C58 /* AObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C4E157EEFE700351C58 /* AObject.h */; };
 		DFB47C51157EEFE700351C58 /* AObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C4F157EEFE700351C58 /* AObject.m */; };
@@ -350,7 +350,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = schnap.ps;
 			};
-			buildConfigurationList = DF61F723157EB29600CCA56D /* Build configuration list for PBXProject "Chakrasana" */;
+			buildConfigurationList = DF61F723157EB29600CCA56D /* Build configuration list for PBXProject "Ardha" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -527,7 +527,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF61F723157EB29600CCA56D /* Build configuration list for PBXProject "Chakrasana" */ = {
+		DF61F723157EB29600CCA56D /* Build configuration list for PBXProject "Ardha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF61F73F157EB29600CCA56D /* Debug */,
