@@ -8,6 +8,7 @@
 
 #import "AWorkspace.h"
 #import "AUser.h"
+#import "ATask.h"
 
 @implementation AWorkspace {
     @private
@@ -15,7 +16,8 @@
 }
 
 @synthesize name=_name,
-            users=_users;
+            users=_users,
+            tasks=_tasks;
 
 #pragma mark - Workspace creation
 - (id)initWithAttributes:(NSDictionary *)attributes
@@ -27,11 +29,15 @@
     _name = [attributes objectForKey:kAsanaAPINameField];
     
     NSString *workspaceUsersURL = [NSString stringWithFormat:@"workspaces/%@/users", [self identifier]];
-    
+    NSString *workspaceTasksURL = [NSString stringWithFormat:@"workspaces/%@/tasks", [self identifier]];
+
     [AUser usersFromURL:workspaceUsersURL withBlock:^(NSDictionary *users) {
         _users = users;
     }];
 
+    [ATask tasksFromURL:workspaceUsersURL withBlock:^(NSDictionary *tasks) {
+        _tasks = [NSMutableDictionary dictionaryWithDictionary:tasks];
+    }];
     return self;
 }
 

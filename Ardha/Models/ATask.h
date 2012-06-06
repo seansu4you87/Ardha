@@ -19,7 +19,7 @@ typedef enum {
 
 @interface ATask : AObject
 
-@property (strong) AUser *asignee;
+@property (strong) AUser *assignee;
 @property ATaskAssigneeStatus assigneeStatus;
 
 @property (readonly) NSDate *createdAt;
@@ -35,5 +35,8 @@ typedef enum {
 
 @property Boolean completed;
 @property (strong) NSDate *dueOn;
+
+- (id)initWithAttributes:(NSDictionary *)attributes;
++ (void)tasksFromURL:(NSString *)workspaceTasksURL withBlock:(void(^)(NSDictionary *))block;
 
 @end

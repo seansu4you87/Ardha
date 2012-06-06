@@ -12,6 +12,7 @@
 
 @property (strong) NSString *name;
 @property (readonly) NSDictionary *users;
+@property (strong) NSMutableDictionary *tasks;
 
 - (id)initWithAttributes:(NSDictionary *)attributes;
 
