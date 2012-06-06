@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+// Ardha models
+#import "AUser.h"
+#import "AWorkspace.h"
+
+static NSString *const kAsanaAPIKey = @"AsanaAPIKey";
+static NSString *const kAsanaAPIURL = @"https://app.asana.com/api/1.0";
+
 @interface Ardha : NSObject
+
+@property (readonly) AUser *me;
 
 @end
