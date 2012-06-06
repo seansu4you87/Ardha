@@ -18,6 +18,7 @@
 		DF719A7B157FD93E00B382AB /* not-done.png in Resources */ = {isa = PBXBuildFile; fileRef = DF719A79157FD93E00B382AB /* not-done.png */; };
 		DF719A7C157FD93E00B382AB /* not-done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF719A7A157FD93E00B382AB /* not-done@2x.png */; };
 		DF719A80157FD9FB00B382AB /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF719A7F157FD9FB00B382AB /* TaskCell.m */; };
+		DF74B6D0157FE9AD00659122 /* Ardha.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47BE7157EB7A900351C58 /* Ardha.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFB228CE157F8A8B000DD11E /* Chakrasana.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB228CD157F8A8B000DD11E /* Chakrasana.storyboard */; };
 		DFB228EE157F93F5000DD11E /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228D9157F93F5000DD11E /* AFHTTPClient.h */; };
 		DFB228EF157F93F5000DD11E /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228DA157F93F5000DD11E /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -57,7 +58,7 @@
 		DFB47C49157EEBD900351C58 /* AProject.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C47157EEBD900351C58 /* AProject.m */; };
 		DFB47C4C157EEBE200351C58 /* AStory.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C4A157EEBE100351C58 /* AStory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFB47C4D157EEBE200351C58 /* AStory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C4B157EEBE200351C58 /* AStory.m */; };
-		DFB47C50157EEFE700351C58 /* AObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C4E157EEFE700351C58 /* AObject.h */; };
+		DFB47C50157EEFE700351C58 /* AObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C4E157EEFE700351C58 /* AObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFB47C51157EEFE700351C58 /* AObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C4F157EEFE700351C58 /* AObject.m */; };
 		DFD0037B157FC71B0054DFB9 /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0037A157FC71B0054DFB9 /* ProjectsViewController.m */; };
 		DFD0037E157FC7250054DFB9 /* WorkspacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0037D157FC7250054DFB9 /* WorkspacesViewController.m */; };
@@ -344,6 +345,7 @@
 				DFB228FF157F93F5000DD11E /* AFXMLRequestOperation.h in Headers */,
 				DFB22901157F93F5000DD11E /* UIImageView+AFNetworking.h in Headers */,
 				DFB22906157F94C7000DD11E /* AsanaAPIClient.h in Headers */,
+				DF74B6D0157FE9AD00659122 /* Ardha.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
