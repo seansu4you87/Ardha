@@ -7,6 +7,7 @@
 //
 
 #import "ATask.h"
+#import "AFJSONRequestOperation.h"
 
 @implementation ATask {
     @private
@@ -15,33 +16,50 @@
         __strong NSDate *_modifiedAt;
 }
 
-@synthesize assignee=_assignee,
+@synthesize name = _name,
+            notes = _notes,
+            assignee=_assignee,
             assigneeStatus,
             createdAt=_createdAt,
             completedAt=_completedAt,
-            modifiedAt=_modifiedAt;
+            modifiedAt=_modifiedAt,
+            completed;
 
 - (id)initWithAttributes:(NSDictionary *)attributes {
-    self = [super init];
+    self = [super initWithAttributes:attributes];
     if (!self)
         return nil;
     
-    _assignee = [[AUser alloc] initWithAttributes:[attributes objectForKey:kAsanaAPIAssigneeField]];
-    
-    NSDictionary *assigneeStatusDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                    [NSNumber numberWithInt:ATaskAssigneeInbox], @"inbox",
-                                    [NSNumber numberWithInt:ATaskAssigneeLater], @"later",
-                                    [NSNumber numberWithInt:ATaskAssigneeToday], @"today",
-                                    [NSNumber numberWithInt:ATaskAssigneeUpcoming], @"upcoming",
-                                    nil];
-    [self setAssigneeStatus:[[assigneeStatusDictionary objectForKey:[attributes objectForKey:kAsanaAPIAssigneeStatusField]] intValue]];
+    _name = [attributes objectForKey:kAsanaAPINameField];
+    _notes = [attributes objectForKey:kAsanaAPINotesField];
+    completed = false;
     
     return self;
 }
 
-+ (void)tasksFromURL:(NSString *)workspaceTasksURL withBlock:(void (^)(NSDictionary *))block
++ (void)tasksFromURL:(NSString *)tasksURL withBlock:(void (^)(NSDictionary *))block
 {
-    [self objectsFromURL:workspaceTasksURL withBlock:block];
+    [self objectsFromURL:tasksURL withBlock:block];
+}
+
+- (NSString *)url
+{
+    return [NSString stringWithFormat:@"tasks/%@", [self identifier]];
+}
+
+- (void)switchCompletionWithBlock:(void (^)(void))block
+{
+    NSString *reversedCompletion = [self completed] ? @"false" : @"true";
+    
+    NSDictionary *parameters = [NSDictionary dictionaryWithObject:reversedCompletion forKey:kAsanaAPICompletionField];
+    NSDictionary *data = [NSDictionary dictionaryWithObject:parameters forKey:kAsanaAPIDataField];
+    
+    [[AsanaAPIClient sharedClient] putPath:[self url] parameters:data success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [self setCompleted:![self completed]];
+        block();
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", [operation responseString]);
+    }];
 }
 
 

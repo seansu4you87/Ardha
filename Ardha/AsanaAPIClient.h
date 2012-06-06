@@ -11,6 +11,8 @@
 @interface AsanaAPIClient : AFHTTPClient
 
 + (AsanaAPIClient *)sharedClient;
+
 - (id)initWithBaseURL:(NSURL *)url;
+- (id)initWithBaseURL:(NSURL *)url andAPIKey:(NSString *)apiKey;
 
 @end

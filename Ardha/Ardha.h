@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-// Ardha models
+// Ardha network handling
 #import "AsanaAPIClient.h"
+
+// Ardha models
 #import "AUser.h"
 #import "AWorkspace.h"
-
-static NSString *const kAsanaAPIKey = @"AsanaAPIKey";
+#import "AProject.h"
+#import "ATask.h"
 
 @interface Ardha : NSObject
 

@@ -26,17 +26,13 @@ typedef enum {
 @property (readonly) NSDate *completedAt;
 @property (readonly) NSDate *modifiedAt;
 
-@property (readonly) NSDictionary *followers;
-@property (readonly) NSDictionary *projects;
-@property (readonly) AWorkspace *workspace;
-
 @property (strong) NSString *name;
 @property (strong) NSString *notes;
 
 @property Boolean completed;
-@property (strong) NSDate *dueOn;
 
 - (id)initWithAttributes:(NSDictionary *)attributes;
 + (void)tasksFromURL:(NSString *)workspaceTasksURL withBlock:(void(^)(NSDictionary *))block;
 
+- (void)switchCompletionWithBlock:(void (^)(void))block;
 @end

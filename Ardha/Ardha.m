@@ -26,32 +26,20 @@
 }
 
 #pragma mark - Ardha initialization
-- (id)initWithAPIKey:(NSString *)apiKey
+- (id)init
 {
     self = [super init];
     
     if (!self)
         return nil;
     
-    [AsanaAPIClient sharedClient];
-        
     // set up the root user assigned to the API key
     [AUser meWithBlock:^(AUser *me) {
         if (me) {
             _me = me;
         }
     }];
-    
     return self;
-}
-
-- (id)init
-{
-    // obtain the Asana API key from the plist in the app's bundle
-    NSString *pathForSettings = [[NSBundle mainBundle] pathForResource:@"Ardha" ofType:@"plist"];
-    NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:pathForSettings];
-    
-    return [self initWithAPIKey:[settings objectForKey:kAsanaAPIKey]];
 }
 
 @end

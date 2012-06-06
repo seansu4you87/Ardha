@@ -13,6 +13,7 @@
 @implementation AsanaAPIClient
 
 static NSString *const kAsanaAPIBaseURLString = @"https://app.asana.com/api/1.0/";
+static NSString *const kAsanaAPIKey = @"AsanaAPIKey";
 
 + (AsanaAPIClient *)sharedClient
 {
@@ -25,22 +26,27 @@ static NSString *const kAsanaAPIBaseURLString = @"https://app.asana.com/api/1.0/
     return _sharedClient;
 }
 
-- (id)initWithBaseURL:(NSURL *)url
+- (id)initWithBaseURL:(NSURL *)url andAPIKey:(NSString *)apiKey
 {
-    // TODO: take care of plucking out the key
     self = [super initWithBaseURL:url];
-    if (!self) {
+    if (!self)
         return nil;
-    }
     
     [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
-
-    NSString *kAsanaAPIKey = @"3aIDXBD.w5GQbgniXAF6Xx1DUWHzrSwe";
+        
 	[self setDefaultHeader:@"Accept" value:@"application/json"];
     [self setParameterEncoding:AFJSONParameterEncoding];
-    [self setAuthorizationHeaderWithUsername:kAsanaAPIKey password:[NSString string]];
+    [self setAuthorizationHeaderWithUsername:apiKey password:[NSString string]];
     
     return self;
+}
+
+- (id)initWithBaseURL:(NSURL *)url
+{    
+    NSString *pathForSettings = [[NSBundle mainBundle] pathForResource:@"Ardha" ofType:@"plist"];
+    NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:pathForSettings];
+    
+    return [self initWithBaseURL:url andAPIKey:[settings objectForKey:kAsanaAPIKey]];
 }
 
 @end

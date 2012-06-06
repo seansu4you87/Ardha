@@ -9,18 +9,15 @@
 #import "AObject.h"
 
 #import "AWorkspace.h"
+#import "ATask.h"
 
 @interface AProject : AObject
 
 @property (strong) NSString *name;
-@property (strong) NSString *notes;
 
-@property (readonly) NSDate *createdAt;
-@property (readonly) NSDate *completedAt;
-@property (readonly) NSDate *modifiedAt;
+@property (strong) NSDictionary *tasks;
 
-@property (readonly) NSDictionary *followers;
-
-@property (readonly) AWorkspace *workspace;
+- (id)initWithAttributes:(NSDictionary *)attributes;
++ (void)projectsFromURL:(NSString *)url withBlock:(void (^)(NSDictionary *))block;
 
 @end

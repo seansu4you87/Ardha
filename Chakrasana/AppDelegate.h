@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Ardha.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

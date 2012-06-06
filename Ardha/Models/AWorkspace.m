@@ -9,6 +9,7 @@
 #import "AWorkspace.h"
 #import "AUser.h"
 #import "ATask.h"
+#import "AProject.h"
 
 @implementation AWorkspace {
     @private
@@ -17,7 +18,8 @@
 
 @synthesize name=_name,
             users=_users,
-            tasks=_tasks;
+            tasks=_tasks,
+            projects=_projects;
 
 #pragma mark - Workspace creation
 - (id)initWithAttributes:(NSDictionary *)attributes
@@ -28,16 +30,12 @@
     
     _name = [attributes objectForKey:kAsanaAPINameField];
     
-    NSString *workspaceUsersURL = [NSString stringWithFormat:@"workspaces/%@/users", [self identifier]];
-    NSString *workspaceTasksURL = [NSString stringWithFormat:@"workspaces/%@/tasks", [self identifier]];
-
-    [AUser usersFromURL:workspaceUsersURL withBlock:^(NSDictionary *users) {
-        _users = users;
+    NSString *workspaceProjectsURL = [NSString stringWithFormat:@"workspaces/%@/projects", [self identifier]];
+    
+    [AProject projectsFromURL:workspaceProjectsURL withBlock:^(NSDictionary *projects) {
+        _projects = [NSMutableDictionary dictionaryWithDictionary:projects];
     }];
 
-    [ATask tasksFromURL:workspaceUsersURL withBlock:^(NSDictionary *tasks) {
-        _tasks = [NSMutableDictionary dictionaryWithDictionary:tasks];
-    }];
     return self;
 }
 
@@ -62,7 +60,6 @@
     [self changeParameters:parameters atURL:workspaceURL withBlock:^(AWorkspace* workspace) {
         if (workspace) {
             _name = [workspace name];
-            NSLog(@"Changed name to %@", [self name]);
         }
     }];
 }
