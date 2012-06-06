@@ -12,8 +12,6 @@
 
 @interface AProject : AObject
 
-@property (readonly) NSString *identifier;
-
 @property (strong) NSString *name;
 @property (strong) NSString *notes;
 

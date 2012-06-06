@@ -19,8 +19,6 @@ typedef enum {
 
 @interface ATask : AObject
 
-@property (readonly) NSString *identifier;
-
 @property (strong) AUser *asignee;
 @property ATaskAssigneeStatus assigneeStatus;
 

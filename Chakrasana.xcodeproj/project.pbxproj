@@ -13,12 +13,33 @@
 		DF61F738157EB29600CCA56D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF61F736157EB29600CCA56D /* InfoPlist.strings */; };
 		DF61F73A157EB29600CCA56D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61F739157EB29600CCA56D /* main.m */; };
 		DF61F73E157EB29600CCA56D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61F73D157EB29600CCA56D /* AppDelegate.m */; };
+		DFB228CE157F8A8B000DD11E /* Chakrasana.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB228CD157F8A8B000DD11E /* Chakrasana.storyboard */; };
+		DFB228D3157F8AD6000DD11E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228D2157F8AD6000DD11E /* MainViewController.m */; };
+		DFB228EE157F93F5000DD11E /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228D9157F93F5000DD11E /* AFHTTPClient.h */; };
+		DFB228EF157F93F5000DD11E /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228DA157F93F5000DD11E /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB228F0157F93F5000DD11E /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228DB157F93F5000DD11E /* AFHTTPRequestOperation.h */; };
+		DFB228F1157F93F5000DD11E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228DC157F93F5000DD11E /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB228F2157F93F5000DD11E /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228DD157F93F5000DD11E /* AFImageRequestOperation.h */; };
+		DFB228F3157F93F5000DD11E /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228DE157F93F5000DD11E /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB228F4157F93F5000DD11E /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228DF157F93F5000DD11E /* AFJSONRequestOperation.h */; };
+		DFB228F5157F93F5000DD11E /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228E0157F93F5000DD11E /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB228F6157F93F5000DD11E /* AFJSONUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228E1157F93F5000DD11E /* AFJSONUtilities.h */; };
+		DFB228F7157F93F5000DD11E /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228E2157F93F5000DD11E /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB228F8157F93F5000DD11E /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228E3157F93F5000DD11E /* AFNetworkActivityIndicatorManager.h */; };
+		DFB228F9157F93F5000DD11E /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228E4157F93F5000DD11E /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB228FA157F93F5000DD11E /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228E5157F93F5000DD11E /* AFNetworking.h */; };
+		DFB228FB157F93F5000DD11E /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228E6157F93F5000DD11E /* AFPropertyListRequestOperation.h */; };
+		DFB228FC157F93F5000DD11E /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228E7157F93F5000DD11E /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB228FD157F93F5000DD11E /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228E8157F93F5000DD11E /* AFURLConnectionOperation.h */; };
+		DFB228FE157F93F5000DD11E /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228E9157F93F5000DD11E /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB228FF157F93F5000DD11E /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228EA157F93F5000DD11E /* AFXMLRequestOperation.h */; };
+		DFB22900157F93F5000DD11E /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228EB157F93F5000DD11E /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB22901157F93F5000DD11E /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228EC157F93F5000DD11E /* UIImageView+AFNetworking.h */; };
+		DFB22902157F93F5000DD11E /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228ED157F93F5000DD11E /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DFB22906157F94C7000DD11E /* AsanaAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB22904157F94C7000DD11E /* AsanaAPIClient.h */; };
+		DFB22907157F94C7000DD11E /* AsanaAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB22905157F94C7000DD11E /* AsanaAPIClient.m */; };
 		DFB47BF9157EB86500351C58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61F72F157EB29600CCA56D /* Foundation.framework */; };
 		DFB47C0C157EBAAB00351C58 /* libArdha.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB47BF8157EB86500351C58 /* libArdha.a */; };
-		DFB47C24157EC8F900351C58 /* SVHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C20157EC8F900351C58 /* SVHTTPClient.h */; };
-		DFB47C25157EC8F900351C58 /* SVHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C21157EC8F900351C58 /* SVHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DFB47C26157EC8F900351C58 /* SVHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47C22157EC8F900351C58 /* SVHTTPRequest.h */; };
-		DFB47C27157EC8F900351C58 /* SVHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47C23157EC8F900351C58 /* SVHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DFB47C28157EC94C00351C58 /* Ardha.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB47BE8157EB7A900351C58 /* Ardha.m */; };
 		DFB47C29157EC97100351C58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61F72D157EB29600CCA56D /* UIKit.framework */; };
 		DFB47C2F157ECB8700351C58 /* Ardha.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFB47C19157EC74000351C58 /* Ardha.plist */; };
@@ -47,15 +68,37 @@
 		DF61F73B157EB29600CCA56D /* Chakrasana-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chakrasana-Prefix.pch"; sourceTree = "<group>"; };
 		DF61F73C157EB29600CCA56D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF61F73D157EB29600CCA56D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFB228CD157F8A8B000DD11E /* Chakrasana.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chakrasana.storyboard; sourceTree = "<group>"; };
+		DFB228D1157F8AD6000DD11E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DFB228D2157F8AD6000DD11E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DFB228D9157F93F5000DD11E /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = Libraries/AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
+		DFB228DA157F93F5000DD11E /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = Libraries/AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
+		DFB228DB157F93F5000DD11E /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = Libraries/AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		DFB228DC157F93F5000DD11E /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = Libraries/AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		DFB228DD157F93F5000DD11E /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = Libraries/AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		DFB228DE157F93F5000DD11E /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = Libraries/AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		DFB228DF157F93F5000DD11E /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = Libraries/AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		DFB228E0157F93F5000DD11E /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = Libraries/AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		DFB228E1157F93F5000DD11E /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONUtilities.h; path = Libraries/AFNetworking/AFNetworking/AFJSONUtilities.h; sourceTree = SOURCE_ROOT; };
+		DFB228E2157F93F5000DD11E /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONUtilities.m; path = Libraries/AFNetworking/AFNetworking/AFJSONUtilities.m; sourceTree = SOURCE_ROOT; };
+		DFB228E3157F93F5000DD11E /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = Libraries/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = SOURCE_ROOT; };
+		DFB228E4157F93F5000DD11E /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = Libraries/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = SOURCE_ROOT; };
+		DFB228E5157F93F5000DD11E /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = Libraries/AFNetworking/AFNetworking/AFNetworking.h; sourceTree = SOURCE_ROOT; };
+		DFB228E6157F93F5000DD11E /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = Libraries/AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		DFB228E7157F93F5000DD11E /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = Libraries/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		DFB228E8157F93F5000DD11E /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = Libraries/AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = SOURCE_ROOT; };
+		DFB228E9157F93F5000DD11E /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = Libraries/AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = SOURCE_ROOT; };
+		DFB228EA157F93F5000DD11E /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = Libraries/AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		DFB228EB157F93F5000DD11E /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = Libraries/AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		DFB228EC157F93F5000DD11E /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "Libraries/AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = SOURCE_ROOT; };
+		DFB228ED157F93F5000DD11E /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "Libraries/AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = SOURCE_ROOT; };
+		DFB22904157F94C7000DD11E /* AsanaAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsanaAPIClient.h; sourceTree = "<group>"; };
+		DFB22905157F94C7000DD11E /* AsanaAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsanaAPIClient.m; sourceTree = "<group>"; };
 		DFB47BE7157EB7A900351C58 /* Ardha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ardha.h; sourceTree = "<group>"; };
 		DFB47BE8157EB7A900351C58 /* Ardha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ardha.m; sourceTree = "<group>"; };
 		DFB47BEA157EB7EE00351C58 /* Ardha-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ardha-Prefix.pch"; sourceTree = "<group>"; };
 		DFB47BF8157EB86500351C58 /* libArdha.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libArdha.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB47C19157EC74000351C58 /* Ardha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Ardha.plist; path = ../Ardha/Ardha.plist; sourceTree = "<group>"; };
-		DFB47C20157EC8F900351C58 /* SVHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVHTTPClient.h; path = Libraries/SVHTTPRequest/SVHTTPRequest/SVHTTPClient.h; sourceTree = SOURCE_ROOT; };
-		DFB47C21157EC8F900351C58 /* SVHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVHTTPClient.m; path = Libraries/SVHTTPRequest/SVHTTPRequest/SVHTTPClient.m; sourceTree = SOURCE_ROOT; };
-		DFB47C22157EC8F900351C58 /* SVHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVHTTPRequest.h; path = Libraries/SVHTTPRequest/SVHTTPRequest/SVHTTPRequest.h; sourceTree = SOURCE_ROOT; };
-		DFB47C23157EC8F900351C58 /* SVHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVHTTPRequest.m; path = Libraries/SVHTTPRequest/SVHTTPRequest/SVHTTPRequest.m; sourceTree = SOURCE_ROOT; };
 		DFB47C36157ED12400351C58 /* AUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUser.h; sourceTree = "<group>"; };
 		DFB47C37157ED12400351C58 /* AUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUser.m; sourceTree = "<group>"; };
 		DFB47C3E157ED62800351C58 /* AWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWorkspace.h; sourceTree = "<group>"; };
@@ -126,6 +169,7 @@
 		DF61F733157EB29600CCA56D /* Chakrasana */ = {
 			isa = PBXGroup;
 			children = (
+				DFB228D0157F8AB2000DD11E /* View Controllers */,
 				DF61F73C157EB29600CCA56D /* AppDelegate.h */,
 				DF61F73D157EB29600CCA56D /* AppDelegate.m */,
 				DF61F734157EB29600CCA56D /* Supporting Files */,
@@ -136,6 +180,7 @@
 		DF61F734157EB29600CCA56D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFB228CD157F8A8B000DD11E /* Chakrasana.storyboard */,
 				DF61F73B157EB29600CCA56D /* Chakrasana-Prefix.pch */,
 				DF61F735157EB29600CCA56D /* Chakrasana-Info.plist */,
 				DFB47C19157EC74000351C58 /* Ardha.plist */,
@@ -143,6 +188,52 @@
 				DF61F739157EB29600CCA56D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFB228D0157F8AB2000DD11E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFB228D1157F8AD6000DD11E /* MainViewController.h */,
+				DFB228D2157F8AD6000DD11E /* MainViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DFB228D8157F93E5000DD11E /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DFB228D9157F93F5000DD11E /* AFHTTPClient.h */,
+				DFB228DA157F93F5000DD11E /* AFHTTPClient.m */,
+				DFB228DB157F93F5000DD11E /* AFHTTPRequestOperation.h */,
+				DFB228DC157F93F5000DD11E /* AFHTTPRequestOperation.m */,
+				DFB228DD157F93F5000DD11E /* AFImageRequestOperation.h */,
+				DFB228DE157F93F5000DD11E /* AFImageRequestOperation.m */,
+				DFB228DF157F93F5000DD11E /* AFJSONRequestOperation.h */,
+				DFB228E0157F93F5000DD11E /* AFJSONRequestOperation.m */,
+				DFB228E1157F93F5000DD11E /* AFJSONUtilities.h */,
+				DFB228E2157F93F5000DD11E /* AFJSONUtilities.m */,
+				DFB228E3157F93F5000DD11E /* AFNetworkActivityIndicatorManager.h */,
+				DFB228E4157F93F5000DD11E /* AFNetworkActivityIndicatorManager.m */,
+				DFB228E5157F93F5000DD11E /* AFNetworking.h */,
+				DFB228E6157F93F5000DD11E /* AFPropertyListRequestOperation.h */,
+				DFB228E7157F93F5000DD11E /* AFPropertyListRequestOperation.m */,
+				DFB228E8157F93F5000DD11E /* AFURLConnectionOperation.h */,
+				DFB228E9157F93F5000DD11E /* AFURLConnectionOperation.m */,
+				DFB228EA157F93F5000DD11E /* AFXMLRequestOperation.h */,
+				DFB228EB157F93F5000DD11E /* AFXMLRequestOperation.m */,
+				DFB228EC157F93F5000DD11E /* UIImageView+AFNetworking.h */,
+				DFB228ED157F93F5000DD11E /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		DFB22903157F9482000DD11E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DFB22904157F94C7000DD11E /* AsanaAPIClient.h */,
+				DFB22905157F94C7000DD11E /* AsanaAPIClient.m */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		DFB47BE4157EB76E00351C58 /* Ardha */ = {
@@ -159,21 +250,11 @@
 		DFB47BE6157EB77400351C58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DFB47C1F157EC89D00351C58 /* SVHTTPRequest */,
+				DFB22903157F9482000DD11E /* Networking */,
+				DFB228D8157F93E5000DD11E /* AFNetworking */,
 				DFB47BEA157EB7EE00351C58 /* Ardha-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DFB47C1F157EC89D00351C58 /* SVHTTPRequest */ = {
-			isa = PBXGroup;
-			children = (
-				DFB47C20157EC8F900351C58 /* SVHTTPClient.h */,
-				DFB47C21157EC8F900351C58 /* SVHTTPClient.m */,
-				DFB47C22157EC8F900351C58 /* SVHTTPRequest.h */,
-				DFB47C23157EC8F900351C58 /* SVHTTPRequest.m */,
-			);
-			name = SVHTTPRequest;
 			sourceTree = "<group>";
 		};
 		DFB47C35157ECE2900351C58 /* Models */ = {
@@ -202,14 +283,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFB47C24157EC8F900351C58 /* SVHTTPClient.h in Headers */,
-				DFB47C26157EC8F900351C58 /* SVHTTPRequest.h in Headers */,
 				DFB47C38157ED12400351C58 /* AUser.h in Headers */,
 				DFB47C40157ED62800351C58 /* AWorkspace.h in Headers */,
 				DFB47C44157EEBD000351C58 /* ATask.h in Headers */,
 				DFB47C48157EEBD900351C58 /* AProject.h in Headers */,
 				DFB47C4C157EEBE200351C58 /* AStory.h in Headers */,
 				DFB47C50157EEFE700351C58 /* AObject.h in Headers */,
+				DFB228EE157F93F5000DD11E /* AFHTTPClient.h in Headers */,
+				DFB228F0157F93F5000DD11E /* AFHTTPRequestOperation.h in Headers */,
+				DFB228F2157F93F5000DD11E /* AFImageRequestOperation.h in Headers */,
+				DFB228F4157F93F5000DD11E /* AFJSONRequestOperation.h in Headers */,
+				DFB228F6157F93F5000DD11E /* AFJSONUtilities.h in Headers */,
+				DFB228F8157F93F5000DD11E /* AFNetworkActivityIndicatorManager.h in Headers */,
+				DFB228FA157F93F5000DD11E /* AFNetworking.h in Headers */,
+				DFB228FB157F93F5000DD11E /* AFPropertyListRequestOperation.h in Headers */,
+				DFB228FD157F93F5000DD11E /* AFURLConnectionOperation.h in Headers */,
+				DFB228FF157F93F5000DD11E /* AFXMLRequestOperation.h in Headers */,
+				DFB22901157F93F5000DD11E /* UIImageView+AFNetworking.h in Headers */,
+				DFB22906157F94C7000DD11E /* AsanaAPIClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +375,7 @@
 			files = (
 				DF61F738157EB29600CCA56D /* InfoPlist.strings in Resources */,
 				DFB47C2F157ECB8700351C58 /* Ardha.plist in Resources */,
+				DFB228CE157F8A8B000DD11E /* Chakrasana.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +388,7 @@
 			files = (
 				DF61F73A157EB29600CCA56D /* main.m in Sources */,
 				DF61F73E157EB29600CCA56D /* AppDelegate.m in Sources */,
+				DFB228D3157F8AD6000DD11E /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,14 +397,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB47C39157ED12400351C58 /* AUser.m in Sources */,
-				DFB47C28157EC94C00351C58 /* Ardha.m in Sources */,
-				DFB47C25157EC8F900351C58 /* SVHTTPClient.m in Sources */,
-				DFB47C27157EC8F900351C58 /* SVHTTPRequest.m in Sources */,
 				DFB47C41157ED62800351C58 /* AWorkspace.m in Sources */,
 				DFB47C45157EEBD000351C58 /* ATask.m in Sources */,
 				DFB47C49157EEBD900351C58 /* AProject.m in Sources */,
 				DFB47C4D157EEBE200351C58 /* AStory.m in Sources */,
 				DFB47C51157EEFE700351C58 /* AObject.m in Sources */,
+				DFB47C28157EC94C00351C58 /* Ardha.m in Sources */,
+				DFB228EF157F93F5000DD11E /* AFHTTPClient.m in Sources */,
+				DFB228F1157F93F5000DD11E /* AFHTTPRequestOperation.m in Sources */,
+				DFB228F3157F93F5000DD11E /* AFImageRequestOperation.m in Sources */,
+				DFB228F5157F93F5000DD11E /* AFJSONRequestOperation.m in Sources */,
+				DFB228F7157F93F5000DD11E /* AFJSONUtilities.m in Sources */,
+				DFB228F9157F93F5000DD11E /* AFNetworkActivityIndicatorManager.m in Sources */,
+				DFB228FC157F93F5000DD11E /* AFPropertyListRequestOperation.m in Sources */,
+				DFB228FE157F93F5000DD11E /* AFURLConnectionOperation.m in Sources */,
+				DFB22900157F93F5000DD11E /* AFXMLRequestOperation.m in Sources */,
+				DFB22902157F93F5000DD11E /* UIImageView+AFNetworking.m in Sources */,
+				DFB22907157F94C7000DD11E /* AsanaAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +552,7 @@
 				DFB47C02157EB86500351C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,11 +10,14 @@
 
 @interface AWorkspace : AObject
 
-@property (readonly) NSString *identifier;
 @property (strong) NSString *name;
+@property (readonly) NSDictionary *users;
 
--(id)initWithAttributes:(NSDictionary *)attributes;
+- (id)initWithAttributes:(NSDictionary *)attributes;
 
--(void)renameWorkspaceTo:(NSString *)newName;
++ (void)workspaceWithID:(NSString *)workspaceID withBlock:(void (^)(AWorkspace *))block;
++ (void)workspacesFromURL:(NSString *)url withBlock:(void (^)(NSDictionary *))block;
+
+- (void)renameWorkspaceTo:(NSString *)newName;
 
 @end

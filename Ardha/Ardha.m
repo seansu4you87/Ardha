@@ -13,39 +13,45 @@
         __block __strong AUser *_me;
 }
 
-@synthesize me=_me;
-
 #pragma mark - Ardha singleton
 + (Ardha *)sharedArdha
 {
-    static Ardha *_sharedClient = nil;
+    static Ardha *_sharedArdha = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[Ardha alloc] init];
+        // we specifically init Ardha with a .plist API key since it's a shared instance
+        _sharedArdha = [[Ardha alloc] init];
     });
-    return _sharedClient;
+    return _sharedArdha;
 }
 
-#pragma mark - Ardha instance
-
-- (id)init
+#pragma mark - Ardha initialization
+- (id)initWithAPIKey:(NSString *)apiKey
 {
     self = [super init];
-
+    
     if (!self)
         return nil;
     
-    NSString *pathForSettings = [[NSBundle mainBundle] pathForResource:@"Ardha" ofType:@"plist"];
-    NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:pathForSettings];
+    [AsanaAPIClient sharedClient];
         
-    [[SVHTTPClient sharedClient] setBasePath:kAsanaAPIURL];
-    [[SVHTTPClient sharedClient] setBasicAuthWithUsername:[settings objectForKey:kAsanaAPIKey] password:[NSString string]];
-    
-    [[SVHTTPClient sharedClient] GET:@"/users/me" parameters:nil completion:^(id response, NSHTTPURLResponse *urlResponse, NSError *error) {
-        _me = [[AUser alloc] initWithAttributes:[response objectForKey:@"data"]];
+    // set up the root user assigned to the API key
+    [AUser meWithBlock:^(AUser *me) {
+        if (me) {
+            _me = me;
+        }
     }];
     
     return self;
+}
+
+- (id)init
+{
+    // obtain the Asana API key from the plist in the app's bundle
+    NSString *pathForSettings = [[NSBundle mainBundle] pathForResource:@"Ardha" ofType:@"plist"];
+    NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:pathForSettings];
+    
+    return [self initWithAPIKey:[settings objectForKey:kAsanaAPIKey]];
 }
 
 @end

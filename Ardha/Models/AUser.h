@@ -10,11 +10,13 @@
 
 @interface AUser : AObject
 
-@property (readonly) NSString* identifier;
 @property (readonly) NSString* email;
 @property (readonly) NSString* name;
 @property (readonly) NSDictionary* workspaces;
 
 - (id)initWithAttributes:(NSDictionary *)attributes;
 
++ (void)userWithID:(NSString *)userID withBlock:(void (^)(AUser *))block;
++ (void)meWithBlock:(void (^)(AUser *))block;
++ (void)usersFromURL:(NSString *)url withBlock:(void (^)(NSDictionary *))block;
 @end

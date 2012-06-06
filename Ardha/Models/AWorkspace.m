@@ -7,44 +7,60 @@
 //
 
 #import "AWorkspace.h"
+#import "AUser.h"
 
 @implementation AWorkspace {
     @private
-        __strong NSString *_identifier;
+        __strong __block NSDictionary *_users;
 }
 
-@synthesize identifier=_identifier,
-            name=_name;
+@synthesize name=_name,
+            users=_users;
 
 #pragma mark - Workspace creation
 - (id)initWithAttributes:(NSDictionary *)attributes
 {
-    self = [super init];
+    self = [super initWithAttributes:attributes];
     if (!self)
         return nil;
     
-    _identifier = [[attributes objectForKey:@"id"] stringValue];
-    _name = [attributes objectForKey:@"name"];
+    _name = [attributes objectForKey:kAsanaAPINameField];
     
+    NSString *workspaceUsersURL = [NSString stringWithFormat:@"workspaces/%@/users", [self identifier]];
+    
+    [AUser usersFromURL:workspaceUsersURL withBlock:^(NSDictionary *users) {
+        _users = users;
+    }];
+
     return self;
 }
 
-#pragma mark - Workspace properties
-- (NSURL *)url
++ (void)workspaceWithID:(NSString *)workspaceID withBlock:(void (^)(AWorkspace *))block
 {
-    NSString *workspaceURL = [NSString stringWithFormat:@"/workspaces/%@", [self identifier]];
-    return [NSURL URLWithString:workspaceURL];
+    NSString *workspaceURL = [NSString stringWithFormat:@"workspaces/%@", workspaceID];
+    [self objectFromURL:workspaceURL withBlock:block];
+}
+
++ (void)workspacesFromURL:(NSString *)url withBlock:(void (^)(NSDictionary *))block
+{
+    [self objectsFromURL:url withBlock:block];
 }
 
 #pragma mark - Workspace modification
 - (void)renameWorkspaceTo:(NSString *)newName
 {
-    NSString *workspaceURL = [[self url] absoluteString];
-    NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:newName, @"name",
+    NSString *workspaceURL = [NSString stringWithFormat:@"workspaces/%@", [self identifier]];
+    NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:newName, kAsanaAPINameField,
                                 nil];
-    [[SVHTTPClient sharedClient] PUT:workspaceURL parameters:parameters completion:^(id response, NSHTTPURLResponse *urlResponse, NSError *error) {
-        _name = [[response objectForKey:@"data"] objectForKey:@"name"];
+
+    [self changeParameters:parameters atURL:workspaceURL withBlock:^(AWorkspace* workspace) {
+        if (workspace) {
+            _name = [workspace name];
+            NSLog(@"Changed name to %@", [self name]);
+        }
     }];
 }
+
+#pragma mark - Workspace information
 
 @end
