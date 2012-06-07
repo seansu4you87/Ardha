@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AProject" representedClassName="AProject" syncable="YES"/>
+    <entity name="AStory" representedClassName="AStory" syncable="YES"/>
+    <entity name="ATask" representedClassName="ATask" syncable="YES"/>
+    <entity name="AUser" representedClassName="AUser" syncable="YES"/>
+    <entity name="AWorkspace" representedClassName="AWorkspace" syncable="YES"/>
+    <elements>
+        <element name="AUser" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="AWorkspace" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="ATask" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="AProject" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="AStory" positionX="160" positionY="192" width="128" height="45"/>
+    </elements>
+</model>

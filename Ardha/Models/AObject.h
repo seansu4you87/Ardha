@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 schnap.ps. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 typedef NSString AAsanaAPIFieldName;
 
@@ -36,7 +36,7 @@ extern AAsanaAPIFieldName *const kAsanaAPITypeField;
 extern AAsanaAPIFieldName *const kAsanaAPIMessageField;
 extern AAsanaAPIFieldName *const kAsanaAPIPhraseField;
 
-@interface AObject : NSObject
+@interface AObject : NSManagedObject
 
 @property (readonly) NSString *identifier;
 

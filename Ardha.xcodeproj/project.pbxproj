@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DF61F72E157EB29600CCA56D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61F72D157EB29600CCA56D /* UIKit.framework */; };
 		DF61F730157EB29600CCA56D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61F72F157EB29600CCA56D /* Foundation.framework */; };
-		DF61F732157EB29600CCA56D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61F731157EB29600CCA56D /* CoreGraphics.framework */; };
 		DF61F738157EB29600CCA56D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF61F736157EB29600CCA56D /* InfoPlist.strings */; };
 		DF61F73A157EB29600CCA56D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61F739157EB29600CCA56D /* main.m */; };
 		DF61F73E157EB29600CCA56D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF61F73D157EB29600CCA56D /* AppDelegate.m */; };
@@ -19,6 +18,10 @@
 		DF719A7C157FD93E00B382AB /* not-done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF719A7A157FD93E00B382AB /* not-done@2x.png */; };
 		DF719A80157FD9FB00B382AB /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF719A7F157FD9FB00B382AB /* TaskCell.m */; };
 		DF74B6D0157FE9AD00659122 /* Ardha.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB47BE7157EB7A900351C58 /* Ardha.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF78B4631580B273007C8297 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF78B4621580B273007C8297 /* CoreData.framework */; };
+		DF78B4801580B306007C8297 /* Ardha.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF78B47F1580B306007C8297 /* Ardha.plist */; };
+		DF78B4831580B46B007C8297 /* Ardha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF78B4811580B46B007C8297 /* Ardha.xcdatamodeld */; };
+		DF78B4841580B4A4007C8297 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF78B4621580B273007C8297 /* CoreData.framework */; };
 		DFB228CE157F8A8B000DD11E /* Chakrasana.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB228CD157F8A8B000DD11E /* Chakrasana.storyboard */; };
 		DFB228EE157F93F5000DD11E /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB228D9157F93F5000DD11E /* AFHTTPClient.h */; };
 		DFB228EF157F93F5000DD11E /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB228DA157F93F5000DD11E /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -69,7 +72,6 @@
 		DF61F729157EB29600CCA56D /* Chakrasana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chakrasana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF61F72D157EB29600CCA56D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF61F72F157EB29600CCA56D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DF61F731157EB29600CCA56D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DF61F735157EB29600CCA56D /* Chakrasana-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chakrasana-Info.plist"; sourceTree = "<group>"; };
 		DF61F737157EB29600CCA56D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF61F739157EB29600CCA56D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,6 +84,9 @@
 		DF719A7A157FD93E00B382AB /* not-done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-done@2x.png"; sourceTree = "<group>"; };
 		DF719A7E157FD9FB00B382AB /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
 		DF719A7F157FD9FB00B382AB /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
+		DF78B4621580B273007C8297 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DF78B47F1580B306007C8297 /* Ardha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ardha.plist; sourceTree = "<group>"; };
+		DF78B4821580B46B007C8297 /* Ardha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ardha.xcdatamodel; sourceTree = "<group>"; };
 		DFB228CD157F8A8B000DD11E /* Chakrasana.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chakrasana.storyboard; sourceTree = "<group>"; };
 		DFB228D9157F93F5000DD11E /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = Libraries/AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
 		DFB228DA157F93F5000DD11E /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = Libraries/AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
@@ -137,9 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB47C0C157EBAAB00351C58 /* libArdha.a in Frameworks */,
+				DF78B4841580B4A4007C8297 /* CoreData.framework in Frameworks */,
 				DF61F72E157EB29600CCA56D /* UIKit.framework in Frameworks */,
 				DF61F730157EB29600CCA56D /* Foundation.framework in Frameworks */,
-				DF61F732157EB29600CCA56D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF78B4631580B273007C8297 /* CoreData.framework in Frameworks */,
 				DFB47C29157EC97100351C58 /* UIKit.framework in Frameworks */,
 				DFB47BF9157EB86500351C58 /* Foundation.framework in Frameworks */,
 			);
@@ -177,9 +183,9 @@
 		DF61F72C157EB29600CCA56D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF78B4621580B273007C8297 /* CoreData.framework */,
 				DF61F72D157EB29600CCA56D /* UIKit.framework */,
 				DF61F72F157EB29600CCA56D /* Foundation.framework */,
-				DF61F731157EB29600CCA56D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			children = (
 				DF719A7D157FD9EA00B382AB /* Table Cells */,
 				DF719A78157FD82400B382AB /* Images */,
+				DF78B47F1580B306007C8297 /* Ardha.plist */,
 				DFB228CD157F8A8B000DD11E /* Chakrasana.storyboard */,
 				DF61F73B157EB29600CCA56D /* Chakrasana-Prefix.pch */,
 				DF61F735157EB29600CCA56D /* Chakrasana-Info.plist */,
@@ -284,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				DFB47C35157ECE2900351C58 /* Models */,
+				DFB22903157F9482000DD11E /* Networking */,
 				DFB47BE7157EB7A900351C58 /* Ardha.h */,
 				DFB47BE8157EB7A900351C58 /* Ardha.m */,
 				DFB47BE6157EB77400351C58 /* Supporting Files */,
@@ -294,7 +302,6 @@
 		DFB47BE6157EB77400351C58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DFB22903157F9482000DD11E /* Networking */,
 				DFB228D8157F93E5000DD11E /* AFNetworking */,
 				DFB47BEA157EB7EE00351C58 /* Ardha-Prefix.pch */,
 			);
@@ -304,6 +311,7 @@
 		DFB47C35157ECE2900351C58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DF78B4811580B46B007C8297 /* Ardha.xcdatamodeld */,
 				DFB47C4E157EEFE700351C58 /* AObject.h */,
 				DFB47C4F157EEFE700351C58 /* AObject.m */,
 				DFB47C36157ED12400351C58 /* AUser.h */,
@@ -425,6 +433,7 @@
 				DF719A76157FD82000B382AB /* done@2x.png in Resources */,
 				DF719A7B157FD93E00B382AB /* not-done.png in Resources */,
 				DF719A7C157FD93E00B382AB /* not-done@2x.png in Resources */,
+				DF78B4801580B306007C8297 /* Ardha.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +475,7 @@
 				DFB22900157F93F5000DD11E /* AFXMLRequestOperation.m in Sources */,
 				DFB22902157F93F5000DD11E /* UIImageView+AFNetworking.m in Sources */,
 				DFB22907157F94C7000DD11E /* AsanaAPIClient.m in Sources */,
+				DF78B4831580B46B007C8297 /* Ardha.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +617,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF78B4811580B46B007C8297 /* Ardha.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF78B4821580B46B007C8297 /* Ardha.xcdatamodel */,
+			);
+			currentVersion = DF78B4821580B46B007C8297 /* Ardha.xcdatamodel */;
+			path = Ardha.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DF61F720157EB29600CCA56D /* Project object */;
 }
